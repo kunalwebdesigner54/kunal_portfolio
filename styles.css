@@ -145,7 +145,7 @@ body {
   color: var(--text-muted);
   font-size: 1.1rem;
   max-width: 650px;
-  margin: 0 auto 48px auto;
+  margin: 0 auto 32px auto;
 }
 
 .text-center {
@@ -301,10 +301,7 @@ body {
 
 /* Hero Section */
 .hero {
-  padding: 160px 0 100px 0;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
+  padding: 130px 0 50px 0;
   position: relative;
 }
 
@@ -519,7 +516,7 @@ body {
 
 /* Sections Base */
 .section {
-  padding: 100px 0;
+  padding: 50px 0;
   position: relative;
 }
 
