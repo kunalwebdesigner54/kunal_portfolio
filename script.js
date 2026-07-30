@@ -2,6 +2,15 @@
 const projectsData = [
   // Client Websites & Web Apps
   {
+    title: "Nexus 3D Web Application",
+    category: "web",
+    typeBadge: "Live 3D Web App",
+    badgeClass: "badge-live",
+    description: "Interactive 3D web application with modern web animations, immersive experience, and high-performance frontend UI.",
+    tags: ["Three.js", "3D Web", "React.js", "Interactive UI"],
+    link: "https://nexus-3d-website.netlify.app/"
+  },
+  {
     title: "Technogrep Portal",
     category: "web",
     typeBadge: "Client Website",
