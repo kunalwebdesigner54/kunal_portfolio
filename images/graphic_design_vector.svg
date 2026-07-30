@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="graphicGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4081"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#9B51E0"/>
+    </linearGradient>
+    <linearGradient id="bgGraphic" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A0F2E"/>
+      <stop offset="100%" stop-color="#07090E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Frame -->
+  <rect x="20" y="20" width="360" height="160" rx="16" fill="url(#bgGraphic)" stroke="#FF4081" stroke-opacity="0.3" stroke-width="1.5"/>
+
+  <!-- Illustrator Canvas Board -->
+  <rect x="44" y="38" width="220" height="124" rx="10" fill="#130924" stroke="#5B21B6" stroke-width="1.5"/>
+  <!-- Bezier Curve Line -->
+  <path d="M 64 128 C 110 38, 170 178, 244 88" fill="none" stroke="url(#graphicGrad)" stroke-width="4" stroke-linecap="round"/>
+  <!-- Anchor Control Points -->
+  <rect x="60" y="124" width="8" height="8" fill="#00F2FE" stroke="#FFF" stroke-width="1.5"/>
+  <rect x="240" y="84" width="8" height="8" fill="#00F2FE" stroke="#FFF" stroke-width="1.5"/>
+  <circle cx="110" cy="80" r="5" fill="#FF4081"/>
+  <circle cx="170" cy="130" r="5" fill="#F59E0B"/>
+  <line x1="110" y1="80" x2="64" y2="128" stroke="#94A3B8" stroke-dasharray="2,2"/>
+  <line x1="170" y1="130" x2="244" y2="88" stroke="#94A3B8" stroke-dasharray="2,2"/>
+
+  <!-- Pen Tool Icon -->
+  <g transform="translate(200, 50)">
+    <polygon points="0,0 24,-12 36,0 0,36 -8,28" fill="url(#graphicGrad)"/>
+    <circle cx="6" cy="10" r="3" fill="#FFF"/>
+  </g>
+
+  <!-- Color Palette Swatches (Right Side) -->
+  <g transform="translate(284, 38)">
+    <rect x="0" y="0" width="72" height="124" rx="10" fill="#241442" stroke="#5B21B6" stroke-width="1.5"/>
+    <circle cx="36" cy="22" r="14" fill="#FF4081"/>
+    <circle cx="36" cy="54" r="14" fill="#F59E0B"/>
+    <circle cx="36" cy="86" r="14" fill="#9B51E0"/>
+    <circle cx="36" cy="110" r="6" fill="#00F2FE"/>
+  </g>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="uiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4081"/>
+      <stop offset="50%" stop-color="#9B51E0"/>
+      <stop offset="100%" stop-color="#00F2FE"/>
+    </linearGradient>
+    <linearGradient id="bgUi" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F1420"/>
+      <stop offset="100%" stop-color="#07090E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Frame -->
+  <rect x="20" y="20" width="360" height="160" rx="16" fill="url(#bgUi)" stroke="#9B51E0" stroke-opacity="0.3" stroke-width="1.5"/>
+
+  <!-- Desktop Artboard -->
+  <rect x="50" y="38" width="180" height="124" rx="10" fill="#1E1B4B" stroke="#818CF8" stroke-width="1.5" opacity="0.9"/>
+  <!-- Artboard Header Bar -->
+  <rect x="62" y="50" width="156" height="14" rx="4" fill="#312E81"/>
+  <circle cx="70" cy="57" r="3" fill="#FF4081"/>
+  <circle cx="80" cy="57" r="3" fill="#F59E0B"/>
+  <circle cx="90" cy="57" r="3" fill="#10B981"/>
+  <!-- UI Card Layout Inside Desktop Artboard -->
+  <rect x="62" y="72" width="70" height="42" rx="6" fill="url(#uiGrad)" opacity="0.8"/>
+  <rect x="140" y="72" width="78" height="18" rx="4" fill="#4338CA"/>
+  <rect x="140" y="96" width="55" height="18" rx="4" fill="#6366F1" opacity="0.7"/>
+  <rect x="62" y="122" width="156" height="28" rx="6" fill="#312E81"/>
+
+  <!-- Mobile Screen Overlay -->
+  <g transform="translate(250, 42)">
+    <rect x="0" y="0" width="95" height="135" rx="14" fill="#090D16" stroke="url(#uiGrad)" stroke-width="2.5"/>
+    <!-- Speaker Notch -->
+    <rect x="34" y="6" width="27" height="4" rx="2" fill="#334155"/>
+    <!-- App UI Cards -->
+    <rect x="10" y="18" width="75" height="35" rx="8" fill="url(#uiGrad)"/>
+    <rect x="10" y="60" width="75" height="12" rx="4" fill="#1E293B"/>
+    <rect x="10" y="78" width="45" height="10" rx="4" fill="#334155"/>
+    <rect x="10" y="94" width="75" height="26" rx="6" fill="#1E1B4B" stroke="#6366F1" stroke-width="1"/>
+  </g>
+
+  <!-- Vector Cursor & Pen Points -->
+  <g transform="translate(210, 110)">
+    <polygon points="0,0 0,22 6,17 12,28 17,25 11,14 18,14" fill="#00F2FE" stroke="#000" stroke-width="1"/>
+  </g>
+</svg>
