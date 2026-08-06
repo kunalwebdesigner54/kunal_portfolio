@@ -1,5 +1,25 @@
 // Portfolio Projects Data extracted from Kunal Manchanda's Resume
 const projectsData = [
+  // Video Editing & Motion Graphics Portfolio
+  {
+    title: "YouTube Video Editing Channel",
+    category: "video",
+    typeBadge: "YouTube Channel",
+    badgeClass: "badge-video",
+    description: "Official YouTube video portfolio featuring post-production video editing, video promos, color grading, and cinematic cuts.",
+    tags: ["Adobe Premiere Pro", "After Effects", "YouTube", "Video Editing"],
+    link: "https://www.youtube.com/@kunalmanchanda3460"
+  },
+  {
+    title: "Facebook Video & Reels Showcase",
+    category: "video",
+    typeBadge: "Facebook Portfolio",
+    badgeClass: "badge-video",
+    description: "Facebook video page presenting creative short-form video reels, promotional ad edits, social media video campaigns, and dynamic visual edits.",
+    tags: ["CapCut", "DaVinci Resolve", "Social Media Video", "Reels & Shorts", "Facebook Video"],
+    link: "https://www.facebook.com/profile.php?id=61586676636591"
+  },
+
   // Client Websites & Web Apps
   {
     title: "Nexus 3D Web Application",
@@ -370,10 +390,29 @@ document.addEventListener('DOMContentLoaded', () => {
       
       const tagsHtml = project.tags.map(t => `<span class="tag">${t}</span>`).join('');
 
+      let iconClass = 'ri-global-line';
+      let linkText = 'Visit Live Project';
+
+      if (project.category === 'figma') {
+        iconClass = 'ri-figma-line';
+        linkText = 'Open Figma Prototype';
+      } else if (project.category === 'video') {
+        if (project.link.includes('youtube.com')) {
+          iconClass = 'ri-youtube-fill';
+          linkText = 'Watch YouTube Portfolio';
+        } else if (project.link.includes('facebook.com')) {
+          iconClass = 'ri-facebook-box-fill';
+          linkText = 'View Facebook Portfolio';
+        } else {
+          iconClass = 'ri-film-line';
+          linkText = 'Watch Video Portfolio';
+        }
+      }
+
       card.innerHTML = `
         <div class="project-header-bar">
           <span class="project-type-badge ${project.badgeClass}">${project.typeBadge}</span>
-          <i class="${project.category === 'figma' ? 'ri-figma-line' : 'ri-global-line'}" style="color: var(--text-muted); font-size: 1.2rem;"></i>
+          <i class="${iconClass}" style="color: ${project.category === 'video' ? 'var(--accent-pink)' : 'var(--text-muted)'}; font-size: 1.25rem;"></i>
         </div>
         <div class="project-body">
           <h3 class="project-title">${project.title}</h3>
@@ -383,7 +422,7 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
           <div class="project-footer">
             <a href="${project.link}" target="_blank" rel="noopener noreferrer" class="project-link">
-              ${project.category === 'figma' ? 'Open Figma Prototype' : 'Visit Live Project'}
+              ${linkText}
               <i class="ri-external-link-line"></i>
             </a>
           </div>
